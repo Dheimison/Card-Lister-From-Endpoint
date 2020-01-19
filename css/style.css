@@ -46,6 +46,15 @@ header > div > button {
 	margin-bottom: 10px;
 }
 
+@keyframes teste {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 header button.filter {
 	width: 200px;
 	cursor: pointer;
@@ -56,6 +65,7 @@ header button.filter {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 10px;
+	animation: teste 1s forwards;
 }
 
 header button.filter::before {

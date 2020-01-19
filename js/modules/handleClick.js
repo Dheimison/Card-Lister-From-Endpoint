@@ -11,14 +11,13 @@ class handleClick {
   filterClick() {
     this.eventList.forEach((oneEvent) => {
       this.btnFilter.addEventListener(oneEvent, () => {
+        event.preventDefault();
         this.btnFilter.classList.add('dropDown');
         this.btnFilter.setAttribute('disabled', '');
         this.btnClose.classList.add('active');
         this.btnClose.setAttribute('disabled', '');
         this.navBar.classList.add('active');
-        setTimeout(() => {
-          this.btnClose.removeAttribute('disabled', '')
-        }, 200);
+        this.btnClose.removeAttribute('disabled', '')
       })
     })
   }
@@ -36,12 +35,11 @@ class handleClick {
   closeClick() {
     this.eventList.forEach((oneEvent) => {
       this.btnClose.addEventListener(oneEvent, () => {
+        event.preventDefault();
         this.btnFilter.classList.remove('dropDown');
         this.btnClose.classList.remove('active');
         this.navBar.classList.remove('active');
-            setTimeout(() => {
-              this.btnFilter.removeAttribute('disabled', '');          
-            }, 200);
+        this.btnFilter.removeAttribute('disabled', '');          
       })
     })
   }
