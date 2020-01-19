@@ -5,7 +5,7 @@ class handleClick {
     this.navBar = document.querySelector('main > nav');
     this.dropdownBtn = document.querySelector('main > nav > a');
     this.listHost = document.querySelector('main > nav > ul');
-    this.eventList = ['click', 'touchend'];
+    this.eventList = ['click', 'touchstart'];
   }
 
   filterClick() {
@@ -14,7 +14,11 @@ class handleClick {
         this.btnFilter.classList.add('dropDown');
         this.btnFilter.setAttribute('disabled', '');
         this.btnClose.classList.add('active');
+        this.btnClose.setAttribute('disabled', '');
         this.navBar.classList.add('active');
+        setTimeout(() => {
+          this.btnClose.removeAttribute('disabled', '')
+        }, 200);
       })
     })
   }
@@ -33,9 +37,11 @@ class handleClick {
     this.eventList.forEach((oneEvent) => {
       this.btnClose.addEventListener(oneEvent, () => {
         this.btnFilter.classList.remove('dropDown');
-        this.btnFilter.removeAttribute('disabled', '');
         this.btnClose.classList.remove('active');
         this.navBar.classList.remove('active');
+            setTimeout(() => {
+              this.btnFilter.removeAttribute('disabled', '');          
+            }, 200);
       })
     })
   }
