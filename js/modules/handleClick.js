@@ -22,6 +22,7 @@ class handleClick {
   dropdownClick() {
     this.eventList.forEach((oneEvent) => {
       this.dropdownBtn.addEventListener(oneEvent, () => {
+        event.preventDefault();
         this.dropdownBtn.classList.toggle('clicked');
         this.listHost.classList.toggle('active');
       })
