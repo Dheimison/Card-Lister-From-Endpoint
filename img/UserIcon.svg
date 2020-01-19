@@ -1,0 +1,19 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="35.7681" cy="26.4347" r="12.5" transform="rotate(-1.24695 35.7681 26.4347)" stroke="url(#paint0_linear)" stroke-width="3"/>
+<path d="M55.9992 61.1334C55.9992 50.9375 47.3223 41.0668 35.4666 41.0668C23.6108 41.0668 14.6992 50.9375 14.6992 61.1334" stroke="url(#paint1_linear)" stroke-width="3"/>
+<circle cx="35" cy="35" r="33.5" stroke="url(#paint2_linear)" stroke-width="3"/>
+<defs>
+<linearGradient id="paint0_linear" x1="35.7681" y1="12.4347" x2="35.7681" y2="40.4347" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6E42F4"/>
+<stop offset="1" stop-color="#CC295E"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="35.4666" y1="41.0668" x2="35.4666" y2="61.1334" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6E42F4"/>
+<stop offset="1" stop-color="#CC295E"/>
+</linearGradient>
+<linearGradient id="paint2_linear" x1="35" y1="0" x2="35" y2="70" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6E42F4"/>
+<stop offset="1" stop-color="#CC295E"/>
+</linearGradient>
+</defs>
+</svg>

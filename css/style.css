@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Iceberg';
+}
+
+body {
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	max-height: 150px;
+	background-color: #41307C;
+	position: relative;
+}
+
+header h1 {
+	font-size: 36px;
+	font-weight: normal;
+	color: #FFFFFF;
+	margin-top: 30px;
+}
+
+header > div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+header > div > button {
+	outline: none;
+	color: #FFFFFF;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	height: 50px;
+	margin-top: 16px;
+	margin-bottom: 10px;
+}
+
+header > div > button:active {
+	transform: translateY(5px);
+}
+
+header button.filter {
+	width: 200px;
+	cursor: pointer;
+	position: relative;
+	background-color: #32255F;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+header button.filter::before {
+	content: '';
+	display: inline-block;
+	background-image: url('../img/configIcon.svg');
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 16px;
+	margin-right: 10px;
+}
+
+header > div > button.close {
+	position: relative;
+	bottom: 4px;
+	background-color: #261C47;
+	border-radius: 0px 5px 0px 0px;
+	width: 80px;
+	cursor: pointer;
+	display: none;
+}
+
+header > div > button.active {
+	display: block;
+	margin-top: 30px;
+}
+
+header > div > button.dropDown {
+	border-radius: 5px 0px 0px 0px;
+	position: relative;
+	bottom: 4px;
+	cursor: unset;
+	width: 170px;
+	margin-top: 30px;
+}
+
+main > nav {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #FFFFFF;
+	min-width: 360px;
+	max-width: 500px;
+	max-height: 180px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+main > nav.active {
+	display: flex;
+}
+
+
+main > nav > p {
+	color: #FFFFFF;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 250px;
+	background-color: #41307C;
+	border-radius: 0px 0px 5px 5px;
+}
+
+main > nav > a {
+	text-decoration: none;
+	font-size: 22px;
+	color: #32255F;
+	margin: 15px 0 10px 0;
+}
+
+main > nav > a::before {
+	content: '';
+	display: inline-block;
+	background-image: url('../img/arrowIcon.svg');
+	background-repeat: no-repeat;
+	height: 10px;
+	width: 15px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	transform: rotate(-90deg);
+	animation: initialRotate 0.2s forwards;
+}
+
+main > nav > a.clicked::before {
+	transform: rotate(0deg);
+	animation: rotate 0.2s forwards;
+}
+
+@keyframes initialRotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-90deg);
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(-90deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+main > nav > ul {
+	display: none;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0px 0 20px 0;
+}
+
+main > nav > ul.active {
+	display: flex;
+}
+
+main > nav > ul > li {
+	margin-right: 15px;
+	font-size: 20px;
+	color: #32255F;
+}
+
+
+@media (max-width:480px) {
+	main > nav > ul {
+		width: 250px;
+	}
+}
+
+main {
+	display: flex;
+	background: linear-gradient(114.52deg, #6E42F4 0%, rgba(204, 41, 94, 0.8) 100%);
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+}
+
+main > ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+main > ul > li {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+	width: 280px;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	margin: 50px;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+main > ul > li:hover{
+	animation: slideUp 0.5s forwards;
+}
+
+@keyframes slideUp {
+	from {
+		transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		transform: translate3d(20px, -20px,-20px);
+	}
+}
+
+main > ul > li > img {
+	margin-top: 15px;
+}
+
+main > ul > li > h3 {
+	font-size: 22px;
+	margin: 20px 0 15px 0;
+}
+
+main > ul > li > p {
+	font-size: 1.1em;
+	margin-bottom: 10px;
+}
+
+main > ul > li > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(180deg, rgba(142, 45, 226, 0.8) 0%, rgba(74, 0, 224, 0.8) 100%);
+	color: #FFFFFF;
+	border-radius: 0px 0px 14px 14px;
+}
+
+main > ul > li:nth-child(even) > div {
+	background: linear-gradient(180deg, #667EEA 0%, #764BA2 100%);
+}
+
+main > ul > li > div > p {
+	font-size: 1em;
+	margin-top: 3px;
+}
+
+main > ul > li > div > h3 {
+	font-size: 22px;
+}
