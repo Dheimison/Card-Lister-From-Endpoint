@@ -5,30 +5,37 @@ class handleClick {
     this.navBar = document.querySelector('main > nav');
     this.dropdownBtn = document.querySelector('main > nav > a');
     this.listHost = document.querySelector('main > nav > ul');
+    this.eventList = ['click', 'touchstart'];
   }
 
   filterClick() {
-    this.btnFilter.addEventListener('click', () => {
-      this.btnFilter.classList.add('dropDown');
-      this.btnFilter.setAttribute('disabled', '');
-      this.btnClose.classList.add('active');
-      this.navBar.classList.add('active');
+    this.eventList.forEach((oneEvent) => {
+      this.btnFilter.addEventListener(oneEvent, () => {
+        this.btnFilter.classList.add('dropDown');
+        this.btnFilter.setAttribute('disabled', '');
+        this.btnClose.classList.add('active');
+        this.navBar.classList.add('active');
+      })
     })
   }
 
   dropdownClick() {
-    this.dropdownBtn.addEventListener('click', () => {
-      this.dropdownBtn.classList.toggle('clicked');
-      this.listHost.classList.toggle('active');
+    this.eventList.forEach((oneEvent) => {
+      this.dropdownBtn.addEventListener(oneEvent, () => {
+        this.dropdownBtn.classList.toggle('clicked');
+        this.listHost.classList.toggle('active');
+      })
     })
   }
 
   closeClick() {
-    this.btnClose.addEventListener('click', () => {
-      this.btnFilter.classList.remove('dropDown');
-      this.btnFilter.removeAttribute('disabled', '');
-      this.btnClose.classList.remove('active');
-      this.navBar.classList.remove('active');
+    this.eventList.forEach((oneEvent) => {
+      this.btnClose.addEventListener(oneEvent, () => {
+        this.btnFilter.classList.remove('dropDown');
+        this.btnFilter.removeAttribute('disabled', '');
+        this.btnClose.classList.remove('active');
+        this.navBar.classList.remove('active');
+      })
     })
   }
 
