@@ -1,6 +1,6 @@
 class renderCard {
   constructor() {
-    this.url = 'http://jsonplaceholder.typicode.com/users';
+    this.url = 'https://jsonplaceholder.typicode.com/users';
     this.container = document.querySelector('main > ul');
   }
 
