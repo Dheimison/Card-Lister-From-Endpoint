@@ -1,5 +1,5 @@
 # Prova Frontend
-## Este projeto consome uma API e tranforma os dados dos usúario retornados pela API em cards, ele também dispõe uma ferramenta para filtrar os usuários por domínio de email.
+## Este projeto consome uma API e tranforma os dados dos usúario retornados pela API em cards, ele também dispõe de uma ferramenta que filtra os usuários por domínio de email.
 
 ### API consumida : `https://jsonplaceholder.typicode.com/users`
 
@@ -18,7 +18,7 @@
 
 OU
 
- - Clone o projeto para a sua máquina usando o seguinte comando no terminal :
+ - Clone o projeto em sua máquina usando o seguinte comando no terminal :
  <br>
  <pre><code>
  git clone https://github.com/Dheimison/Prova-Frontend.git
