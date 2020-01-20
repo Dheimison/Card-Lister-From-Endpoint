@@ -14,7 +14,11 @@
 
 ### Como usar :
 
- - Primeiro clone o projeto para a sua máquina usando o seguinte comando no terminal :
+- Acesse : https://dheimison.github.io/Prova-Frontend/
+
+OU
+
+ - Clone o projeto para a sua máquina usando o seguinte comando no terminal :
  <br>
  <pre><code>
  git clone https://github.com/Dheimison/Prova-Frontend.git
