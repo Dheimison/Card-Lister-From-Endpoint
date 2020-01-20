@@ -211,6 +211,7 @@ main > nav > button {
 	background: none;
 	border: none;
 	outline: none;
+	cursor: pointer;
 }
 
 main > nav > button::before {
