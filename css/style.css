@@ -244,10 +244,15 @@ main > nav > ul.active {
 	animation: hiddenSlide 0.5s ease;
 }
 
+main > nav > ul > li > input {
+	cursor: pointer;
+}
+
 main > nav > ul > li > label {
 	margin-right: 15px;
 	font-size: 20px;
 	color: #32255F;
+	cursor: pointer;
 }
 
 main > ul {
