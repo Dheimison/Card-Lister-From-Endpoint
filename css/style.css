@@ -204,14 +204,16 @@ main > nav > p {
 	border-radius: 0px 0px 5px 5px;
 }
 
-main > nav > a {
-	text-decoration: none;
+main > nav > button {
 	font-size: 22px;
 	color: #32255F;
 	margin: 15px 0 10px 0;
+	background: none;
+	border: none;
+	outline: none;
 }
 
-main > nav > a::before {
+main > nav > button::before {
 	content: '';
 	display: inline-block;
 	background-image: url('../img/arrowIcon.svg');
@@ -224,7 +226,7 @@ main > nav > a::before {
 	animation: initialRotate 0.2s ease-out;
 }
 
-main > nav > a.clicked::before {
+main > nav > button.clicked::before {
 	transform: rotate(0deg);
 	animation: rotate 0.2s forwards;
 }
@@ -241,7 +243,7 @@ main > nav > ul.active {
 	animation: hiddenSlide 0.5s ease;
 }
 
-main > nav > ul > li {
+main > nav > ul > li > label {
 	margin-right: 15px;
 	font-size: 20px;
 	color: #32255F;

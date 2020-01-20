@@ -3,7 +3,7 @@ class handleClick {
     this.btnFilter = document.querySelector('.filter');
     this.btnClose = document.querySelector('.close');
     this.navBar = document.querySelector('main > nav');
-    this.dropdownBtn = document.querySelector('main > nav > a');
+    this.dropdownBtn = document.querySelector('main > nav > button');
     this.listHost = document.querySelector('main > nav > ul');
     this.eventList = ['click', 'touchstart'];
   }
