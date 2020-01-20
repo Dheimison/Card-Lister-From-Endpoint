@@ -16,15 +16,31 @@
 
  - Primeiro clone o projeto para a sua máquina usando o seguinte comando no terminal :
  <br>
- `git clone https://github.com/Dheimison/Prova-Frontend.git`
+ <pre><code>
+ git clone https://github.com/Dheimison/Prova-Frontend.git
+ </code></pre>
  <br>
  - Depois instale as dependências (CONNECT e SERVER-STATIC) usadas para montar um servidor local com o seguinte comando no seu terminal :
  <br>
- `yarn` OU `npm i`
+ <pre><code>
+ yarn 
+ </code></pre>
+ OU 
+ <pre><code>
+ npm i
+ </code></pre>
  <br>
  - Para iniciar o servidor e visualizar o projeto no browser utilize no seu terminal o comando:
  <br>
- `yarn start` OU `npm run start`
+
+ <pre><code>
+ yarn start
+ </code></pre>
+
+  OU 
+<pre><code>
+npm run start
+</code></pre>
  <br>
 
  #### O arquivo server.js contém as configuração do servidor local.
