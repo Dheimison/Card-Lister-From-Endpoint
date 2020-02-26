@@ -56,7 +56,7 @@ class domainFilter {
   };
 
   async init() {
-    await renderCard.data();
+    // await renderCard.data();
     this.addOnArray();
   };
 };

@@ -1,4 +1,9 @@
-var connect = require('connect');
-var serveStatic = require('serve-static');
-connect().use(serveStatic(__dirname)).listen(8080, function(){
+const express = require('express');
+
+const server = express();
+
+server.use(express.static('public'));
+
+server.listen(8080, () => {
+  console.log('Servidor rodando em: http://localhost:8080')
 });

@@ -4,13 +4,13 @@
 ### API consumida : `https://jsonplaceholder.typicode.com/users`
 
 ### PrintScreen do projeto :
-![Homepage](./img/Homepage.png)
+![Homepage](./public/img/Homepage.png)
 
 ### Tecnologias usadas no projeto:
 - HTML5
 - CSS3
 - JavaScript(Vanilla)
-- Node.js(Necessário para rodar um servidor local)
+- Node.js e Express (Necessário para rodar um servidor local)
 
 ### Como usar :
 
@@ -24,7 +24,7 @@ OU
  git clone https://github.com/Dheimison/Prova-Frontend.git
  </code></pre>
  <br>
- - Depois instale as dependências (CONNECT e SERVER-STATIC) usadas para montar um servidor local com o seguinte comando no seu terminal :
+ - Depois instale a dependência (EXPRESS) usada para montar um servidor local com o seguinte comando no seu terminal :
  <br>
  <pre><code>
  yarn 
