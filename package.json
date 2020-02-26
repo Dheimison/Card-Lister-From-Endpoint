@@ -6,7 +6,7 @@
   "author": "Dheimison <dheimisonlo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "start": "node public/server.js"
   },
   "dependencies": {
     "express": "^4.17.1"
