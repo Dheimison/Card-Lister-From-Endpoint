@@ -1,5 +1,5 @@
 # Card Render
-## Este projeto consome uma API e tranforma os dados dos usúario retornados pela API em cards, ele também dispõe de uma ferramenta que filtra os usuários por domínio de email.
+## Este projeto consome uma API e tranforma os dados dos usúario retornados pela API em uma lista de cartões, ele também dispõe de uma ferramenta que filtra os usuários por domínio de email.
 
 ### API consumida : `https://jsonplaceholder.typicode.com/users`
 
