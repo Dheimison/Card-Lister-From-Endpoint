@@ -14,7 +14,7 @@
 
 ### Como usar :
 
-- Acesse : https://dheimison.github.io/Prova-Frontend/
+- Acesse : https://dheimison.github.io/Prova-Frontend/public
 
 OU
 
