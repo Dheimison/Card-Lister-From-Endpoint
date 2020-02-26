@@ -1,4 +1,4 @@
-# Prova Frontend
+# Card Render
 ## Este projeto consome uma API e tranforma os dados dos usúario retornados pela API em cards, ele também dispõe de uma ferramenta que filtra os usuários por domínio de email.
 
 ### API consumida : `https://jsonplaceholder.typicode.com/users`
@@ -14,14 +14,14 @@
 
 ### Como usar :
 
-- Acesse : https://dheimison.github.io/Prova-Frontend/public
+- Acesse : https://dheimison.github.io/Card-Render-From-API/public
 
 OU
 
  - Clone o projeto em sua máquina usando o seguinte comando no terminal :
  <br>
  <pre><code>
- git clone https://github.com/Dheimison/Prova-Frontend.git
+ git clone https://github.com/Dheimison/Card-Render-From-API.git
  </code></pre>
  <br>
  - Depois instale a dependência (EXPRESS) usada para montar um servidor local com o seguinte comando no seu terminal :
