@@ -1,7 +1,7 @@
-# Card Render
-## Este projeto consome uma API e tranforma os dados dos usúario retornados pela API em uma lista de cartões, ele também dispõe de uma ferramenta que filtra os usuários por domínio de email.
+# Card Lister
+## Este projeto consome um Endpoint e tranforma os dados dos usúario retornados pelo Endpoint em uma lista de cartões, ele também dispõe de uma ferramenta que filtra os usuários por domínio de email.
 
-### API consumida : `https://jsonplaceholder.typicode.com/users`
+### Endpoint consumido : `https://jsonplaceholder.typicode.com/users`
 
 ### PrintScreen do projeto :
 ![Homepage](./public/img/Homepage.png)
@@ -14,14 +14,14 @@
 
 ### Como usar :
 
-- Acesse : https://dheimison.github.io/Card-Render-From-API/public
+- Acesse : https://dheimison.github.io/Card-Lister-From-Endpoint/public
 
 OU
 
  - Clone o projeto em sua máquina usando o seguinte comando no terminal :
  <br>
  <pre><code>
- git clone https://github.com/Dheimison/Card-Render-From-API.git
+ git clone https://github.com/Dheimison/Card-Lister-From-Endpoint.git
  </code></pre>
  <br>
  - Depois instale a dependência (EXPRESS) usada para montar um servidor local com o seguinte comando no seu terminal :
